@@ -49,7 +49,7 @@ fun JobsScreen(
         mutableStateOf(convertToStatusCharts(jobsList, jobStatusColorMap, JobApiModel::status))
     }
     val (completedCount, totalJobs) = remember(jobsChart) {
-        val completed = jobsChart.count { it.status == JobStatus.Completed.name }
+        val completed = jobsChart.find { it.status == JobStatus.Completed.name }?.count ?: 0
         val total = jobsChart.sumOf { it.count }
         completed to total
     }
