@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">android-dashboard-problem</string>
+
+    <string name="job_status">Job Status</string>
+    <string name="invoice_status">Invoice Status</string>
+    <string name="dashboard">Dashboard</string>
+</resources>
